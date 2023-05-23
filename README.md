@@ -23,7 +23,7 @@ python test_brick.py\
    --num 5\
    --setting "shuffle_both"\
    --model_name "chatgpt"\
-   --key api_key
+   --key ${api_key}
 
 ```
 This is to use chatgpt with Chain-of-Symbol (CoS) prompting in Brick World 1d task, and in "shuffle both" setting.
