@@ -11,5 +11,4 @@ do
   done
 done
 
-# 执行完毕
 echo "All done!"

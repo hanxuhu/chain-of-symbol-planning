@@ -7,7 +7,7 @@ for setting in "${SETTING[@]}"
 do
   for num in "${NUMS[@]}"
   do
-    python $PYTHON_SCRIPT --prompt_type "cot" --setting $setting --num $num --model_name "text-davinci-003" 
+    python $PYTHON_SCRIPT --prompt_type "cot" --setting $setting --num $num --model_name "text-davinci-003" --key ${api_key}
   done
 done
 

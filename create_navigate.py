@@ -162,7 +162,7 @@ for step in range(500):
     res = {'Story': descp, 'Question': q, 'Answer': answer_final}
     res_all.append(res)
     #print(descp)
-with open('navigation/examplar.json', 'w') as outfile:
+with open('../data/navigation_data/navigation_data.json', 'w') as outfile:
         json.dump(res_all, outfile)
 
 

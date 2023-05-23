@@ -150,7 +150,7 @@ if __name__ == "__main__":
         instance_all.append(instance)
     instance_all
     print(instance_all[:5])
-    with open('nlvr_data/nlvr_data.json', 'w') as outfile:
+    with open('../data/nlvr_data/nlvr_data.json', 'w') as outfile:
         json.dump(instance_all, outfile)
     
 

@@ -3,7 +3,7 @@ import random
 
 import math
 import json
-
+import argparse
 class Brick:
     def __init__(self, x, y, z, label='None', shape='None', color = 'None'):
         self.x = x
@@ -174,39 +174,44 @@ def remove_bricks(brick, brick_dict, res):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="test LLM planning abilities")
 
-    
-    n = 1
-    m = 1
-    shuffle_label = True
-    bricks = build_bricks(n, m,4, shuffle_label)
-    for brick in bricks:
-        print(brick)
-    print("------------------------")
-    res = "There are a set of bricks. "
-    color_set = set({})
-    shape_set = set({})
-    for i in range(len(bricks)):
-        print(bricks[i])
-        color_set.add(bricks[i].color)
-        shape_set.add(bricks[i].shape)
-        if i>0:
-            print(i)
-            res = res + bricks[i].get_position_description(bricks[:i])
-            print(res)
-        else:
-            #res = res + ", " +"for the brick {}, the shape is {}, and the color is {}".format(bricks[i].label, bricks[i].shape, bricks[i].color)
-            res = res  +"There is a brick {}".format(bricks[i].label)
-    brick_target = find_farthest_bricks(bricks, bricks[1], target_color="white")
-    brick_target = find_nearest_bricks(bricks, bricks[1], target_color="white")
-    dict_above = {}
-    for item in bricks:
-        make_dict(dict_above, item, bricks)
-    print(dict_above)
-    res = ''
-    res = remove_bricks("B", dict_above, res)
-    print("res",res)
-    print(res, dict_above)
+    parser.add_argument(
+        "--n",
+        type=int,
+        default=1,
+        help="",
+    )
+    parser.add_argument(
+        "--m",
+        type=int,
+        default=1,
+        help="",
+    )
+    parser.add_argument(
+        "--l_low",
+        type=int,
+        default=7,
+        help="num",
+    )
+    parser.add_argument(
+        "--l_high",
+        type=int,
+        default=10,
+        help="num",
+    )
+    parser.add_argument(
+        "--dim",
+        type=int,
+        default=1,
+        help="dim",
+    )
+    args = parser.parse_args()
+    l_low = args.l_low 
+    l_high = args.l_high
+    n = args.n
+    m = args.m
+    dim = args.dim
     data_list = []
     for i in range(500):
         list_char = []
@@ -218,13 +223,13 @@ if __name__ == "__main__":
         n = random.randint(1, 2)
         m = random.randint(1, 2)
         '''
-        l = random.randint(2, 7)
+        l = random.randint(l_low, l_high)
 
-        n, m = 1, 1
-
-        n = random.randint(2, 3)
+        if dim ==1:
+            n = 1
+        else:
+            n = random.randint(n, n+1)
         
-        num = random.randint(1, 3)
         for j in range(n * m):
             list_char.append(chr(flag+j))
         char_index = random.randint(1, 3)
@@ -235,7 +240,7 @@ if __name__ == "__main__":
         for item in bricks:
             color_set.add(item.color)
             shape_set.add(item.shape)
-        res = "There are a set of bricks. "
+        res = "There is a set of bricks. "
         color_list = list(color_set)
         shape_list = list(shape_set)
         #random.randint(1, )
@@ -298,7 +303,7 @@ if __name__ == "__main__":
         data = {"label":label, "data": res}
         data_list.append(data)
     dataset = {"testset": data_list}
-    with open('shuffle__2d_fordemo.json', 'w') as outfile:
+    with open('../data/brick1d_data/data_new.json', 'w') as outfile:
         json.dump(data_list, outfile)
 
 
