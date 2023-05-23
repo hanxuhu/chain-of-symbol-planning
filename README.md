@@ -50,5 +50,10 @@ python eval_prompt.py;
 python eval_nlvr.py;
 python eval_navigation.py;
 ```
+## Data
 
-
+We have created the data of Brick World, NVLR-based Manipunation, and Natural Language Planning in you can view them through:
+```bash
+cd data
+```
+You can also costomize your own Natural Language Planning data by modifying 'create_bricks.py', 'create_navigate.py', and 'create_nlvr.py' and run them.
