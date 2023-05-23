@@ -20,7 +20,7 @@ api_key=<YOUR_OPENAI_API_KEY>
 cd running;
 python test_brick.py\
    --prompt_type "cos"\
-   --num 5\
+   --num 1\
    --setting "shuffle_both"\
    --model_name "chatgpt"\
    --key ${api_key}
@@ -28,6 +28,9 @@ python test_brick.py\
 ```
 This is to use chatgpt with Chain-of-Symbol (CoS) prompting in Brick World 1d task, and in "shuffle both" setting.
 The outputs will be saved in "results/chatgpt_results/". 
+
+For arguments, "prompt_type" has two options: "cos" and "cot", which represents Chain-of-Symbol (CoS) prompting and Chain-of-Thought (CoS) prompting respectively, and "setting" has four options: "shuffle_both", "shuffle_label", "shuffle_descpt", and "noshuffle". And "model_name" now support 2 options: "chatgpt" and "text-davinci-003".
+
 
 or you can also adjust the parameters in test_brick.sh, then:
 ```bash
