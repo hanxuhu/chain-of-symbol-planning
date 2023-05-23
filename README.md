@@ -4,7 +4,7 @@
 
 Code and data of paper: _Chain-of-Symbol Prompting Elicits Planning in Large Language Models_. 2023
 
-Hanxu Hu. Westlake Unversity
+Hanxu Hu. Westlake Unversity Hongyuan Lu. the Chinese University of Hong Kong
 
 [Paper pdf](https://arxiv.org/pdf/2305.10276.pdf)
 
