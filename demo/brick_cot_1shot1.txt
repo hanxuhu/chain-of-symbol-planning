@@ -1,0 +1,7 @@
+Question:
+There are a set of bricks. The yellow brick A is on top of the brick C . The yellow brick B is on top of the brick A . For the brick C, the color is white. Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick A?
+Answer:
+The bricks from bottom to top is C, A, B
+1. Remove brick B from the top of brick A.
+2. Now brick A is the topmost brick and can be grabbed.
+So we get the result as B, A.

@@ -1,0 +1,24 @@
+Question:
+There are a set of bricks. For the brick A, the color is white. The white brick B is on top of the brick A . The yellow brick C is on top of the brick B . The blue brick D is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick B?
+Answer:
+A,B,C,D, so we get the result as D, C, B
+
+Question:
+There are a set of bricks. For the brick A, the color is yellow. The blue brick B is on top of the brick A . The yellow brick C is on top of the brick B . The blue brick D is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick C?
+Answer:
+A,B,C,D, so we get the result as D, C
+
+Question:
+There are a set of bricks. For the brick A, the color is blue. The white brick B is on top of the brick A . The yellow brick C is on top of the brick B . The blue brick D is on top of the brick C . The yellow brick E is on top of the brick D . The blue brick F is on top of the brick E . The blue brick G is on top of the brick F . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick A?
+Answer:
+A,B,C,D,E,F,G, so we get the result as G, F, E, D, C, B, A.
+
+Question:
+There are a set of bricks. For the brick A, the color is yellow. The white brick B is on top of the brick A . The blue brick C is on top of the brick B . The blue brick D is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick B?
+Answer:
+A,B,C,D, so we get the result as D, C, B.
+
+Question:
+There are a set of bricks. For the brick A, the color is yellow. The white brick B is on top of the brick A . The white brick C is on top of the brick B . The white brick D is on top of the brick C . The yellow brick E is on top of the brick D . The blue brick F is on top of the brick E . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick C?
+Answer:
+A,B,C,D,E,F, so we get the result as F, E, D, C.

@@ -1,0 +1,4 @@
+Question:
+There are a set of bricks. The blue brick A is on top of the brick E . For the brick C, the color is blue. The blue brick D is on top of the brick B . The white brick E is on top of the brick D . The blue brick B is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick D?
+Answer:
+C,B,D,E,A, so we get the result as A, E, D.

@@ -1,0 +1,1 @@
+[{"pred": "B  -> E \nE  -> D \nD  -> C \nC  -> A \nA  -> F\nSo we get the result as B, E, D, C, A, F.", "label": "BEDCAF"}, {"pred": "C  -> B\nB  -> A\nSo we get the result as C, B, A.", "label": "we dont need to remove"}]

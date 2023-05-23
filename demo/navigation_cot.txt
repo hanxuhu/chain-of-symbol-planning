@@ -1,0 +1,31 @@
+There is a set of roads and a set of landmarks. The start point is bank A. There is a road which is 200 meters long from bank A to bank C. There is a road which is 100 meters long from bank C to house H. There is a road which is 100 meters long from house H to cinema F. There is a road which is 200 meters long from cinema F to store B. There is a road which is 100 meters long from store B to store G. There is a road which is 200 meters long from bank C to house D. There is a road which is 200 meters long from house D to garden J. There is a road which is 100 meters long from bank A to cinema I. There is a road which is 100 meters long from cinema I to house E. 
+From the start point, how to reach the nearest store?
+Let's think step by step
+1. Start at bank A.
+2. There are two stores on the map, store B and store G.
+3. The road from bank A to store B is from bank A to bank C to house H to cinema F to store B (200 meters + 100 meters + 100 meters + 200 meters = 600 meters)
+4. The road from bank A to store B is shorter than the road from bank A to store G.
+5. Therefore, the nearest store from the start point (bank A) is store B.
+So the answer is ACHFB.
+
+There is a set of roads and a set of landmarks. The start point is bank H. There is a road which is 100 meters long from bank H to store E. There is a road which is 200 meters long from store E to bank C. There is a road which is 100 meters long from bank C to house A. There is a road which is 100 meters long from house A to house F. There is a road which is 200 meters long from bank C to garden I. There is a road which is 200 meters long from store E to cinema G. There is a road which is 200 meters long from cinema G to school J. There is a road which is 200 meters long from bank H to school D. There is a road which is 100 meters long from school D to store B. 
+From the start point, how to reach the nearest school?
+Let's think step by step
+1. Start at bank H.
+2. There are two schools on the map, school J and school D.
+3. The road from bank H to school J is from bank H to store E to cinema G to school J (200 meters + 200 meters + 200 meters = 600 meters).
+4. The road from bank H to school D is from bank H to school D (200 meters).
+5. Therefore, the nearest school from the start point (bank H) is school D.
+6. Follow the road from bank H to school D (200 meters).
+So the answer is HD
+
+There is a set of roads and a set of landmarks. The start point is garden B. There is a road which is 200 meters long from garden B to cinema D. There is a road which is 200 meters long from cinema D to school J. There is a road which is 100 meters long from garden B to school I. There is a road which is 100 meters long from school I to house C. There is a road which is 100 meters long from house C to bank F. There is a road which is 100 meters long from house C to cinema G. There is a road which is 200 meters long from cinema G to store H. There is a road which is 100 meters long from store H to cinema E. There is a road which is 200 meters long from cinema E to bank A. 
+From the start point, how to reach the nearest school?
+Let's think step by step
+1. Start at garden B.
+2. There are two schools on the map, school J and school I.
+3. The road from garden B to school J is from garden B to cinema D to school J (200 meters + 200 meters = 400 meters).
+4. The road from garden B to school I is from garden B to school I (100 meters).
+5. Therefore, the nearest school from the start point (garden B) is school I.
+6. Follow the road from garden B to school I (100 meters).
+So the answer is BI

@@ -1,0 +1,32 @@
+There is a set of roads and a set of landmarks. The start point is garden J. There is a road which is 200 meters long from garden J to bank I. There is a road which is 200 meters long from bank I to school B. There is a road which is 200 meters long from garden J to house F. There is a road which is 200 meters long from house F to school E. There is a road which is 200 meters long from school E to bank A. There is a road which is 200 meters long from bank A to bank H. There is a road which is 100 meters long from house F to school G. There is a road which is 200 meters long from school G to bank C.
+From the start point, how to reach the nearest school?
+There is a set of roads and a set of landmarks. The start point is garden J. There is a road which is 200 meters long from garden J to bank I. There is a road which is 200 meters long from bank I to school B. There is a road which is 200 meters long from garden J to house F. There is a road which is 200 meters long from house F to school E. There is a road which is 200 meters long from school E to bank A. There is a road which is 200 meters long from bank A to bank H. There is a road which is 100 meters long from house F to school G. There is a road which is 200 meters long from school G to bank C.
+From the start point, how to reach the nearest school?
+Let's think step by step
+1. Start at garden J.
+2. There are three schools on the map, school B, school E, and school G.
+3. The road from garden J to school B is from garden J to bank I to school B (200 meters + 200 meters = 400 meters)
+4. The road from garden J to school E is from garden J to house F to school E (200 meters+ 200 meters = 400 meters)
+5. The road from garden J to school G is from garden J to house F to school G (200 meters + 100 meters = 300 meters)
+6. The road to school G is shorter than the roads to school B and school E.
+7. Therefore, the nearest school from the start point (garden J) is school G.
+So the answer is JFG.
+
+There is a set of roads and a set of landmarks. The start point is bank H. There is a road which is 100 meters long from bank H to garden G. There is a road which is 200 meters long from garden G to garden J. There is a road which is 100 meters long from garden J to bank C. There is a road which is 200 meters long from bank C to store A. There is a road which is 200 meters long from garden G to cinema I. There is a road which is 200 meters long from cinema I to house D. 
+From the start point, how to reach the nearest cinema?
+Let's think step by step
+1. Start at bank H.
+2. There is only one cinema on the map, cinema I.
+3. The road from bank H to cinema I is from bank H to garden G to cinema I (100 meters + 200 meters = 300 meters)
+4. The road from bank H to cinema I is shorter than the road from bank H to cinema F.
+5. Therefore, the nearest cinema from the start point (bank H) is cinema I.
+So the answer is HGI.
+
+There is a set of roads and a set of landmarks. The start point is school D. There is a road which is 100 meters long from school D to store F. There is a road which is 100 meters long from store F to bank C. There is a road which is 200 meters long from store F to cinema I. There is a road which is 100 meters long from school D to school B. There is a road which is 100 meters long from school B to bank J. There is a road which is 100 meters long from bank J to bank H. 
+From the start point, how to reach the nearest cinema?
+Let's think step by step
+1. Start at school D.
+2. There is only one cinema on the map, cinema I.
+3. The road from school D to cinema I is from school D to store F to cinema I (100 meters + 200 meters = 300 meters)
+4. Therefore, the nearest cinema from the start point (school D) is cinema I.
+So the answer is DFI.

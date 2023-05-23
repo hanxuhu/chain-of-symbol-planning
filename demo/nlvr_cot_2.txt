@@ -1,0 +1,84 @@
+Story:There are three boxes. In the left box, there are one middle square in black, one small round in yellow, one middle square in blue, one middle triangle in black. In the middle box, there are one middle triangle in yellow, one small triangle in yellow, one middle square in black. In the right box, there are one large triangle in blue, one large round in yellow, one large square in black, one small round in blue.
+Question:How to move all yellow objects to the middle box?
+Answer:
+To move all yellow objects to the middle box, we need to identify all the yellow objects in the three boxes. They are:
+
+- One small round in yellow in the left box
+- One middle triangle in yellow in the middle box
+- One small triangle in yellow in the middle box
+- One large round in yellow in the right box
+
+Then we can move the boxes above not in the middle box to the middle box one by one:
+
+1. Move the small round in yellow from the left box to the middle box.
+2. Move the large round in yellow from the right box to the middle box.
+
+Now all the yellow objects are in the middle box.
+
+Story:There are three boxes. In the left box, there are one small round in yellow, one middle square in blue. In the middle box, there are one middle triangle in yellow, one large round in yellow, one middle round in black, one middle square in blue, one middle square in blue. In the right box, there are one small round in yellow, one small round in yellow, one middle square in black.
+Question:How to move all squares to the right box?
+To move all square objects to the right box, we need to identify all the square objects in the three boxes. They are:
+
+- One middle square in blue in the left box
+- One middle square in blue in the middle box
+- One middle square in blue in the middle box
+- One middle square in black in the right box
+
+Then we can move the boxes above with the square object to the right box:
+
+1. Move the middle square in blue from the left box to the right box.
+2. Move the middle square in blue from the middle box to the right box.
+3. Move the middle square in blue from the middle box to the right box.
+
+Now all the square objects are in the right box.
+
+Story:
+There are three boxes. In the left box, there are one large round in blue, one large round in black, one large square in black, one middle round in yellow, one small round in black, one small triangle in yellow. In the middle box, there are one small square in blue, one small round in blue. In the right box, there are one small triangle in black, one small round in blue, one large square in blue, one small triangle in yellow, one small square in black.
+Question:How to move all squares to the middle box
+Answer:
+To move all square objects to the middle box, we need to identify all the square objects in the three boxes. They are:
+
+- One large square in black in the left box
+- One large square in blue in the right box
+- One small square in blue in the middle box
+- One small square in black in the right box
+
+Then we can move the boxes above with the square object to the middle box:
+
+1. Move the large square in black from the left box to the middle box.
+2. Move the large square in blue from the right box to the middle box.
+3. Move the small square in black from the right box to the middle box.
+
+Now all the square objects are in the middle box.
+
+Story:There are three boxes. In the left box, there are one small triangle in blue, one small round in yellow, one small round in yellow, one large square in yellow. In the middle box, there are one middle triangle in black, one large round in black, one large square in black, one large triangle in black. In the right box, there are one small square in blue, one small round in black.
+Question:How to move all triangles to the middle box
+Answer:
+To move all triangle objects to the middle box, we need to identify all the triangle objects in the three boxes. They are:
+
+- One small triangle in blue in the left box
+- One middle triangle in black in the middle box
+- One large triangle in black in the middle box
+
+Then we can move the boxes above with the triangle object to the middle box:
+
+1. Move the small triangle in blue from the left box to the middle box.
+
+Now all the triangle objects are in the middle box.
+
+Story:There are three boxes. In the left box, there are one middle square in yellow, one middle triangle in yellow, one large square in yellow, one large triangle in yellow. In the middle box, there are one middle round in blue, one small round in blue, one small triangle in black. In the right box, there are one small square in black, one middle square in blue, one large triangle in black, one large triangle in yellow, one middle square in black.
+question: How to move all blue objects to the right box
+Answer:
+To move all blue objects to the right box, we need to identify all the blue objects in the three boxes. They are:
+
+- One middle round in blue in the middle box
+- One small round in blue in the middle box
+- One middle square in blue in the right box
+- One middle square in black in the right box
+
+Then we can move the boxes above with the blue object to the right box:
+
+1. Move the middle round in blue from the middle box to the right box.
+2. Move the small round in blue from the middle box to the right box.
+
+Now all the blue objects are in the right box.

@@ -1,0 +1,96 @@
+Story: “There are a set of bricks. The blue brick C is on top of the brick A . For the brick F, the color is blue. The blue brick A is on top of the brick F. The white brick D is on top of the brick C . The blue brick B is on top of the brick E . The blue brick E is on top of the brick D . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first.”
+
+Question: “How to get brick F?.”
+
+Answer: “We first convert text description as structured description, we use '//' to divide the upper and lower spaces, the left side of // means the bottom, and the right side of // means the top.
+
+In this example:
+
+Firstly we should ignore the sentence “For the brick F, the color is blue.”
+
+'brick C is on top of the brick A ' — > 'A // C', so L = ['A // C']. 
+
+There is only one relationship in list L, so we shouldn’t merge.
+
+‘brick A is on top of the brick F' — > 'F//A', so L = [’A//C’, ‘F//A’]
+
+There is a common brick A in relation ’A//C’ and ‘F//A’ , so we should merge:
+
+L =  [’A//C’, ‘F//A’] =  [‘F//A//C’]
+
+There is no common brick in relationships, we we shouldn’t merge and keep moving.
+
+'brick D is on top of the brick C'  — > 'C//D', so L = [’F//A//C’, ‘C//D’] 
+
+There is one common brick C in  ‘F//A//C’ and ‘C//D’, so we should merge:
+
+ L = [’F//A//C’, ‘C//D’] = [’F//A//C//D’] 
+
+'brick B is on top of the brick E'  — > 'E//B', so L = [’F//A//C//D’, ‘E//B’] 
+
+There is no common brick in relationships, we we shouldn’t merge and keep moving.
+
+'brick E is on top of the brick D'  — > 'D//E', so L = [’F//A//C//D’, ‘E//B’, ‘D//E’] 
+
+There is one common brick ‘D’ in relation ’F//A//C//D’ and ‘D//E’, so we should merge
+
+L = [’F//A//C//D’, ‘E//B’, ‘D//E’] = [’F//A//C//D//E’, ‘E//B’] 
+
+There is another common brick  ‘E’ in relation ’F//A//C//D//E’, so we should merge
+
+L = [’F//A//C//D//E’, ‘E//B’] = [’F//A//C//D//E//B’] 
+
+Now we need to get brick F, we can know that F is in the leftmost of 'F//A//C//D//E//B', which means F is at the bottom. The left to right means the bottom to top, and we need remove bricks from the top. So we need to remove from the most right brick to the left. So we need to remove brick B, E, D, C, A, and get brick F. So the answer is BEDCAF”
+
+Story:There are a set of bricks. The blue brick A is on top of the brick E . For the brick C, the color is blue. The blue brick D is on top of the brick B . The white brick E is on top of the brick D . The blue brick B is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. 
+
+Question:How to get brick C?
+
+Answer:We first convert text description as structured description, we use '//' to divide the upper and lower spaces, the left side of // means the bottom, and the right side of // means the top.
+
+In this example:
+
+Firstly we should ignore the sentence “For the brick X, the color is X”, here, we delete " For the brick C, the color is blue."
+
+'blue brick A is on top of the brick E' — > 'E // A', so L = ['E // A'].
+
+There is only one relationship in list L, so we shouldn’t merge.
+
+'blue brick D is on top of the brick B' — > 'B // D', so L = ['E // A', 'B // D']
+
+There is no common brick in relationships, we we shouldn’t merge and keep moving.
+
+'white brick E is on top of the brick D' — > 'D // E', so L = ['E // A', 'B // D', 'D // E']
+
+There is a common brick D in relation 'B // D' and 'D // E', so we should merge:
+L = ['E // A', 'B // D', 'D // E'] = ['E // A', 'B // D // E']
+
+'blue brick B is on top of the brick C' — > 'C // B', so L = ['E // A', 'B // D // E', 'C // B']
+
+There is a common brick B in relation 'B // D // E' and 'C // B', so we should merge:
+L = ['E // A', 'B // D // E', 'C // B'] = ['E // A', 'C // B // D // E']
+
+And there is another common brick E in relation 'C // B // D // E' and 'E // A', so we should merge:
+L = ['E // A', 'C // B // D // E'] = ['C// B // D // E//A']
+
+Now we need to get brick C, we can know that C is in the leftmost of C// B // D // E//A, which means C is at the bottom. The left to right means the bottom to top, and we need remove bricks from the top. So we need to remove brick A, E, D, B, and C. So the answer is AEDBC.
+
+Story:There are a set of bricks. The white brick C is on top of the brick B . The blue brick A is on top of the brick C . For the brick B, the color is white. Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. 
+
+Question:How to get brick A?
+
+Answer: We first convert text description as structured description, we use '//' to divide the upper and lower spaces, the left side of // means the bottom, and the right side of // means the top.
+
+In this example:
+
+Firstly we should ignore the sentence "For the brick X, the color is X", here, we delete "For the brick B, the color is white."
+
+'white brick C is on top of the brick B' — > 'B // C', so L = ['B // C'].
+
+There is only one relationship in list L, so we shouldn't merge.
+
+'blue brick A is on top of the brick C' — > 'C // A', so L = ['B // C', 'C // A']
+
+There is no common brick in relationships, we we shouldn't merge and keep moving.
+
+Now we need to get brick A, we can know that A is in the rightmost of 'B // C // A', which means A is at the top. The left to right means the bottom to top, and we need remove bricks from the top. But A is at the top, so we don’t need to remove any bricks.

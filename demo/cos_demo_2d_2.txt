@@ -1,0 +1,29 @@
+Question:
+There are a set of bricks. The brick K is on top of the brick F . The brick M is in front of the brick F. The brick N is on top of the brick K . For the brick O, the color is blue. The brick G is on top of the brick A . The brick F is in front of the brick I. The brick I is in front of the brick O. The brick A is on top of the brick N . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick O?
+Answer:
+Using the symbolic method to convert text to symbols, B->A means A is in front of B and C->B means B is in front of C and C//D means D is on top of C. Then combine the relation together, then solve this question recursively and keep the last sentence as the format of 'so we get the result as (the sequence of names of bricks in order):
+we can getF//K//N//A//G, F->I->O, So we get the result as O directly.
+
+Question:
+There are a set of bricks. The brick G is on top of the brick C . The brick O is on top of the brick M . The brick D is in front of the brick C. The brick H is on top of the brick B . The brick I is on top of the brick E . The brick E is on top of the brick D . For the brick A, the color is yellow. The brick C is in front of the brick B. The brick L is on top of the brick I . The brick N is on top of the brick L . The brick J is on top of the brick H . The brick B is in front of the brick A. The brick M is on top of the brick J . The brick K is on top of the brick G . The brick F is on top of the brick A . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick A?
+Answer:
+Using the symbolic method to convert text to symbols, B->A means A is in front of B and C//B means B is on top of C. Then combine the relation together, then solve this question recursively and keep the last sentence as the format of 'so we get the result as (the sequence of names of bricks in order):
+we can get C//G//G, D//E//I//L//N, B//H//J//M//O, A//F, D->C->B->A. So we get the result as F, A.
+
+Question:
+There are a set of bricks. The brick D is on top of the brick B . For the brick A, the color is yellow. The brick C is on top of the brick A . The brick B is in front of the brick A. Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick B?
+Answer:
+Using the symbolic method to convert text to symbols, B->A means A is in front of B and C//B means B is on top of C. Then combine the relation together, then solve this question recursively and keep the last sentence as the format of 'so we get the result as (the sequence of names of bricks in order):
+we can get A//C, B//D, A->B. So we get the result as D, B.
+
+Question:
+There are a set of bricks. The brick B is in front of the brick A. The brick C is on top of the brick B . For the brick A, the color is white. The brick D is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick B?
+Answer:
+Using the symbolic method to convert text to symbols, B->A means A is in front of B and C//B means B is on top of C. Then combine the relation together, then solve this question recursively and keep the last sentence as the format of 'so we get the result as (the sequence of names of bricks in order):
+we can get B->A, B//C//D. So we get the result as D, C, B.
+
+Question:
+There are a set of bricks. The brick E is on top of the brick B . The brick B is in front of the brick A. The brick F is on top of the brick C . For the brick A, the color is blue. The brick C is in front of the brick B. The brick D is on top of the brick A . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick B?
+Answer:
+Using the symbolic method to convert text to symbols, B->A means A is in front of B and C//B means B is on top of C. Then combine the relation together, then solve this question recursively and keep the last sentence as the format of 'so we get the result as (the sequence of names of bricks in order):
+we can get B->A, B//E, C//F, D//A. So we get the result as E, B.

@@ -1,0 +1,20 @@
+There is a set of roads and a set of landmarks. The start point is school D. There is a road which is 100 meters long from school D to store F. There is a road which is 100 meters long from store F to bank C. There is a road which is 200 meters long from store F to cinema I. There is a road which is 100 meters long from school D to school B. There is a road which is 100 meters long from school B to bank J. There is a road which is 100 meters long from bank J to bank H. 
+From the start point, how to reach the nearest cinema?
+There is only one cinema on the map, cinema I.
+- school D -> store F -> cinema I (100 + 200 = 300)
+We get the result as school D -> store F -> cinema I.
+So the answer is DFI.
+
+There is a set of roads and a set of landmarks. The start point is cinema J. There is a road which is 200 meters long from cinema J to garden B. There is a road which is 200 meters long from cinema J to cinema E. There is a road which is 100 meters long from cinema E to house I. There is a road which is 200 meters long from house I to bank C. There is a road which is 100 meters long from bank C to school F. There is a road which is 200 meters long from school F to house A. ", "Question": "From the start point, how to reach the nearest bank?
+There are one bank C.
+- cinema J -> cinema E -> house I -> bank C (200 + 100 + 200 = 500)
+We get the result as cinema J -> cinema E -> house I -> bank C.
+So the answer is JEIC.
+
+There is a set of roads and a set of landmarks. The start point is school C. There is a road which is 100 meters long from school C to cinema H. There is a road which is 200 meters long from cinema H to house D. There is a road which is 200 meters long from school C to store G. There is a road which is 100 meters long from store G to garden F. There is a road which is 100 meters long from garden F to school E. There is a road which is 100 meters long from store G to store B. 
+From the start point, how to reach the nearest cinema?
+There are two cinemas on the map, cinema H and cinema E.
+- school C -> cinema H (100)
+- school C -> store G -> garden F -> cinema E (200 + 100 + 100 = 400)
+We get the result as school C -> cinema H.
+So the answer is CH.

@@ -1,0 +1,71 @@
+Story:There are three boxes. In the left box, there are one middle square in yellow, one middle square in black, one small square in blue, one middle square in blue. In the middle box, there are one large square in blue, one middle square in blue, one middle square in black, one large triangle in black, one middle round in blue, one small square in yellow. In the right box, there are one large round in blue, one small triangle in yellow, one large triangle in blue.
+Question:How to move all rounds to the middle box?
+Answer:
+Now we use symbolic method to represent objects, for example, 'In the left box, there are one middle square in yellow' can be represented as (left, middle, square, yellow)
+To move all rounds to the middle box, we need to identify all the round objects in the three boxes. They are:
+
+- (middle, middle, round, blue)
+- (right, large, round, blue)
+
+Then we can move the objects not in the middle box above to the middle box one by one:
+- (right, large, round, blue) -> middle box
+
+Story:There are three boxes. In the left box, there are one small round in blue, one small round in blue, one large round in black, one large square in blue, one small round in yellow, one small round in yellow. In the middle box, there are one large square in blue, one middle triangle in yellow. In the right box, there are one large round in black, one large round in blue, one middle triangle in black, one middle triangle in black.
+Question:How to move all squares to the right box?
+Answer:
+Now we use symbolic method to represent objects, for example, 'In the left box, there are one middle square in yellow' can be represented as (left, middle, square, yellow)
+To move all sqaure objects to the right box, we need to identify all the square objects in the three boxes. They are:
+
+- (left, large, square, blue)
+- (middle, large, square, blue)
+
+Then we can move the objects not in the right box above to the right box:
+
+- (left, large, square, blue) -> right box
+- (middle, large, square, blue) -> right box
+
+Story:There are three boxes. In the left box, there are one large square in blue, one middle square in blue, one small round in blue, one middle triangle in blue, one middle round in yellow, one large square in yellow. In the middle box, there are one small round in yellow, one middle square in blue, one small triangle in black, one small square in black, one small triangle in yellow, one large round in black. In the right box, there are one small square in yellow, one small triangle in yellow, one middle triangle in black, one large round in yellow, one middle square in blue, one large square in yellow.
+Question:How to move all black objects to the right box?
+Answer:
+Now we use symbolic method to represent objects, for example, 'In the left box, there are one middle square in yellow' can be represented as (left, middle, square, yellow)
+To move all black objects to the right box, we need to identify all the black objects in the three boxes. They are:
+
+- (middle, small, triangle, black)
+- (middle, small, square, black)
+- (middle, large, round, black)
+
+Then we can move the objects not in the right box above to the right box:
+
+- (middle, small, triangle, black) -> right box
+- (middle, small, square, black) -> right box
+- (middle, large, round, black) -> right box
+
+Story:There are three boxes. In the left box, there are one middle square in yellow, one middle square in black, one small square in blue, one middle square in blue. In the middle box, there are one large square in blue, one middle square in blue, one middle square in black, one large triangle in black, one middle round in blue, one small square in yellow. In the right box, there are one large round in blue, one small triangle in yellow, one large triangle in blue.
+Question:How to move all rounds to the middle box?
+Answer:
+Now we use symbolic method to represent objects, for example, 'In the left box, there are one middle square in yellow' can be represented as (left, middle, square, yellow)
+To move all rounds to the middle box, we need to identify all the round objects in the three boxes. They are:
+
+- (middle, middle, round, blue) 
+- (right, large, round, blue) 
+
+Then we can move the objects not in the middle box above to the middle box:
+
+- (right, large, round, blue) -> middle box
+
+Story:There are three boxes. In the left box, there are one large round in black, one small square in blue, one small square in blue, one small triangle in yellow, one middle square in yellow. In the middle box, there are one large square in yellow, one middle triangle in blue, one large round in black. In the right box, there are one large square in blue, one large triangle in black, one middle triangle in black.
+Question:How to move all black objects to the left box?
+Answer:
+Now we use symbolic method to represent objects, for example, 'In the left box, there are one middle square in yellow' can be represented as (left, middle, square, yellow)
+To move all black objects to the left box, we need to identify all the black objects in the three boxes. They are:
+
+- (left, large, round, black)
+- (middle, large, round, black)
+- (right, middle, triangle, black)
+- (right, large, triangle, black)
+
+Then we can move the objects not in the left box above to the left box:
+
+- (middle, large, round, black) -> left box
+- (right, middle, triangle, black) -> left box
+- (right, large, triangle, black) -> left box

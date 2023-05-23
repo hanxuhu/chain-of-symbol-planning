@@ -1,0 +1,68 @@
+Story:There are three boxes. In the left box, there are one middle square in yellow, one middle square in black, one small square in blue, one middle square in blue. In the middle box, there are one large square in blue, one middle square in blue, one middle square in black, one large triangle in black, one middle round in blue, one small square in yellow. In the right box, there are one large round in blue, one small triangle in yellow, one large triangle in blue.
+Question:How to move all rounds to the middle box?
+Answer:
+To move all rounds to the middle box, we need to identify all the round objects in the three boxes. They are:
+
+- One middle round in blue (middle box) represented as: (blue, round, middle, middle)
+- One large round in blue (right box) represented as: (blue, round, large,  right)
+
+Then we can move the objects not in the middle box above to the middle box one by one:
+ (blue, round, large, right) -> (blue, round, large, middle)
+
+Story:There are three boxes. In the left box, there are one small round in blue, one small round in blue, one large round in black, one large square in blue, one small round in yellow, one small round in yellow. In the middle box, there are one large square in blue, one middle triangle in yellow. In the right box, there are one large round in black, one large round in blue, one middle triangle in black, one middle triangle in black.
+Question:How to move all squares to the right box?
+Answer:
+To move all sqaure objects to the right box, we need to identify all the square objects in the three boxes. They are:
+
+- One large square in blue (left box) represented as: (blue, square, large, left)
+- One large square in blue (middle box) represented as: (blue, square, large, middle)
+
+Then we can move the objects not in the right box above to the right box:
+
+- (blue, square, large, left) -> (blue, square, large, right)
+- (blue, square, large, middle) ->(blue, square, large, right)
+
+Story:There are three boxes. In the left box, there are one large square in blue, one middle square in blue, one small round in blue, one middle triangle in blue, one middle round in yellow, one large square in yellow. In the middle box, there are one small round in yellow, one middle square in blue, one small triangle in black, one small square in black, one small triangle in yellow, one large round in black. In the right box, there are one small square in yellow, one small triangle in yellow, one middle triangle in black, one large round in yellow, one middle square in blue, one large square in yellow.
+Question:How to move all black objects to the right box?
+Answer:
+To move all black objects to the right box, we need to identify all the black objects in the three boxes. They are:
+
+- One small triangle in black (middle box) represented as: (black, triangle, small, middle)
+- One small square in black (middle box) represented as: (black, square, small, middle)
+- One large round in black (middle box) represented as: (black, round, large, middle)
+
+Then we can move the objects not in the right box above to the right box:
+
+- (black, triangle, small, middle) -> (black, triangle, small, right)
+- (black, square, small, middle) -> (black, square, small, right)
+- (black, round, large, middle) -> (black, round, large, right)
+
+Story:There are three boxes. In the left box, there are one middle square in yellow, one middle square in black, one small square in blue, one middle square in blue. In the middle box, there are one large square in blue, one middle square in blue, one middle square in black, one large triangle in black, one middle round in blue, one small square in yellow. In the right box, there are one large round in blue, one small triangle in yellow, one large triangle in blue.
+Question:How to move all rounds to the middle box?
+Answer:
+To move all rounds to the middle box, we need to identify all the round objects in the three boxes. They are:
+
+- One middle round in blue (middle box) represented as: (blue, round, middle, middle) 
+- One large round in blue (right box) represented as: (blue, round, large, right) 
+
+Then we can move the objects not in the middle box above to the middle box:
+
+- (blue, round, large, right) -> (blue, round, large, middle)
+
+Story:There are three boxes. In the left box, there are one large round in black, one small square in blue, one small square in blue, one small triangle in yellow, one middle square in yellow. In the middle box, there are one large square in yellow, one middle triangle in blue, one large round in black. In the right box, there are one large square in blue, one large triangle in black, one middle triangle in black.
+Question:How to move all black objects to the left box?
+Answer:
+To move all black objects to the left box, we need to identify all the black objects in the three boxes. They are:
+
+- One large round in black (left box) represented as: (black, round, large, left)
+- One large round in black (middle box) represented as: (black, round, large, middle)
+- One large triangle in black (right box) represented as: (black, triangle, middle, right)
+- One middle triangle in black (right box) represented as: (black, triangle, large, right)
+
+Then we can move them to the left box one by one:
+
+- (black, round, large, middle) -> (black, round, large, left)
+- (black, triangle, large, right) -> (black, triangle, large, left)
+- (black, triangle, middle, right) -> (black, triangle, middle, left)
+
+

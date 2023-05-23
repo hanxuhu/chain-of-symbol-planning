@@ -1,0 +1,55 @@
+There are a set of bricks. For the brick B, the color is yellow. The yellow brick C is on top of the brick B . The yellow brick A is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick B
+
+Write a python code to solve this problem:
+bricks = ['B', 'C', 'A']
+temp = []
+while bricks[-1] != 'B':
+    temp.append(bricks.pop())
+temp.append('B')
+print(temp)
+We can get the result from the print as ['A', 'C', 'B']
+
+There are a set of bricks. The yellow brick A is on top of the brick C . The yellow brick B is on top of the brick A . For the brick C, the color is white. Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick A?
+
+Write a python code to solve this problem:
+
+bricks = ['C', 'A', 'B']
+temp = []
+while bricks[-1] != 'A':
+    temp.append(bricks.pop())
+temp.append('A')
+print(temp)
+We can get the result from the print as ['B', 'A']
+
+There are a set of bricks. The blue brick A is on top of the brick E . For the brick C, the color is blue. The blue brick D is on top of the brick B . The white brick E is on top of the brick D . The blue brick B is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick D?
+
+Write a python code to solve this problem:
+bricks = ['C', 'B', 'D', 'E', 'A']
+temp = []
+while bricks[-1] != 'D':
+    temp.append(bricks.pop())
+temp.append('D')
+print(temp)
+We can get the result from the print as ['A', 'E', 'D']
+
+There are a set of bricks. The white brick F is on top of the brick C . The white brick C is on top of the brick B . The yellow brick E is on top of the brick A . For the brick B, the color is white. The white brick D is on top of the brick F . The blue brick A is on top of the brick D . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick F?
+
+Write a python code to solve this problem:
+bricks = ['B', 'C', 'F', 'D', 'A', 'E']
+temp = []
+while bricks[-1] != 'F':
+    temp.append(bricks.pop())
+temp.append('F')
+print(temp)
+We can get the result from the print as ['E', 'A', 'D', 'F']
+
+There are a set of bricks. The white brick F is on top of the brick D . The yellow brick B is on top of the brick A . The blue brick D is on top of the brick C . The white brick E is on top of the brick G . For the brick A, the color is blue. The blue brick C is on top of the brick E . The white brick G is on top of the brick B . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick G?
+
+Write a python code to solve this problem:
+bricks = ['A', 'B', 'G', 'E', 'C', 'D', 'F']
+temp = []
+while bricks[-1] != 'G':
+    temp.append(bricks.pop())
+temp.append('G')
+print(temp)
+We can get the result from the print as ['F', 'D', 'C', 'E', 'G']

@@ -1,0 +1,58 @@
+Question:
+There are a set of bricks. The brick B is on top of the brick A . The brick E is on top of the brick D . The brick F is on top of the brick E . The brick G is on top of the brick F . The brick H is on top of the brick G . For the brick A, the color is white. The brick I is on top of the brick H . The brick C is on top of the brick B . The brick D is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick A?
+Answer:
+The bricks from bottom to top is A, B, C, D, E, F, G, H, I
+1. Remove brick I from the top of brick H.
+2. Remove brick H from the top of brick G.
+3. Remove brick G from the top of brick F.
+4. Remove brick F from the top of brick E.
+5. Remove brick E from the top of brick D.
+6. Remove brick D from the top of brick C.
+7. Remove brick C from the top of brick B.
+8. Now brick A is the topmost brick and can be grabbed.
+So we get the result as I, H, G, F, E, D, C, B, A.
+
+Question:
+There are a set of bricks. The brick C is on top of the brick B . The brick F is on top of the brick E . The brick G is on top of the brick F . The brick B is on top of the brick A . The brick D is on top of the brick C . For the brick A, the color is blue. The brick E is on top of the brick D . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick B?
+Answer:
+The bricks from bottom to top is A, B, C, D, E, F, G
+1. Remove brick G from the top of brick F.
+2. Remove brick F from the top of brick E.
+3. Remove brick E from the top of brick D.
+4. Remove brick D from the top of brick C.
+5. Now brick C is the topmost brick and can be grabbed.
+6. Remove brick C from the top of brick B.
+7. Now brick B is the topmost brick and can be grabbed.
+So we get the result as G, F, E, D, C, B.
+
+Question:
+There are a set of bricks. The brick E is on top of the brick D . For the brick A, the color is white. The brick D is on top of the brick C . The brick C is on top of the brick B . The brick B is on top of the brick A . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick B?
+Answer:
+The bricks from bottom to top is A, B, C, D, E
+1. Remove brick E from the top of brick D.
+2. Remove brick D from the top of brick C.
+3. Now brick C is the topmost brick and can be grabbed.
+4. Remove brick C from the top of brick B.
+5. Now brick B is the topmost brick and can be grabbed.
+So we get the result as E, D, C, B.
+
+Question:
+There are a set of bricks. The brick B is on top of the brick A . The brick C is on top of the brick B . For the brick A, the color is yellow. The brick D is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick A?
+Answer:
+The bricks from bottom to top is A, B, C, D
+1. Remove brick D from the top of brick C.
+2. Remove brick C from the top of brick B.
+3. Remove brick B from the top of brick A.
+4. Now brick A is the topmost brick and can be grabbed.
+So we get the result as D, C, B, A.
+
+Question:
+There are a set of bricks. The brick E is on top of the brick D . The brick F is on top of the brick E . The brick G is on top of the brick F . The brick C is on top of the brick B . For the brick A, the color is blue. The brick B is on top of the brick A . The brick D is on top of the brick C . Now we have to get a specific brick. The bricks must now be grabbed from top to bottom, and if the lower brick is to be grabbed, the upper brick must be removed first. How to get brick C?
+Answer:
+The bricks from bottom to top is A, B, C, D, E, F, G
+1. Remove brick G from the top of brick F.
+2. Remove brick F from the top of brick E.
+3. Remove brick E from the top of brick D.
+4. Remove brick D from the top of brick C.
+5. Now brick C is the topmost brick and can be grabbed.
+So we get the result as G, F, E, D, C.

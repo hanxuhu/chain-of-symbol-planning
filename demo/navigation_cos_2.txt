@@ -1,0 +1,22 @@
+There is a set of roads and a set of landmarks. The start point is garden J. There is a road which is 200 meters long from garden J to bank I. There is a road which is 200 meters long from bank I to school B. There is a road which is 200 meters long from garden J to house F. There is a road which is 200 meters long from house F to school E. There is a road which is 200 meters long from school E to bank A. There is a road which is 200 meters long from bank A to bank H. There is a road which is 100 meters long from house F to school G. There is a road which is 200 meters long from school G to bank C.
+From the start point, how to reach the nearest school?
+There are three schools on the map, school B, school E, and school G.
+- garden J -> bank I -> school B (200 + 200 = 400)
+- garden J -> house F  -> school E (200 + 200 = 400)
+- garden J -> house F  -> school G (200 + 100 = 300)
+We get the result as garden J -> house F  -> school G (300).
+So the answer is JFG.
+
+There is a set of roads and a set of landmarks. The start point is bank H. There is a road which is 100 meters long from bank H to garden G. There is a road which is 200 meters long from garden G to garden J. There is a road which is 100 meters long from garden J to bank C. There is a road which is 200 meters long from bank C to store A. There is a road which is 200 meters long from garden G to cinema I. There is a road which is 200 meters long from cinema I to house D. 
+From the start point, how to reach the nearest cinema?
+There is only one cinema on the map, chinema I.
+- bank H -> garden G -> cinema I (100 + 200 + 200 = 500)
+We get the result as bank H -> garden G -> cinema I.
+So the answer is HGI.
+
+There is a set of roads and a set of landmarks. The start point is school D. There is a road which is 100 meters long from school D to store F. There is a road which is 100 meters long from store F to bank C. There is a road which is 200 meters long from store F to cinema I. There is a road which is 100 meters long from school D to school B. There is a road which is 100 meters long from school B to bank J. There is a road which is 100 meters long from bank J to bank H. 
+From the start point, how to reach the nearest cinema?
+There is only one cinema on the map, cinema I.
+- school D -> store F -> cinema I (100 + 200 = 300)
+We get the result as school D -> store F -> cinema I.
+So the answer is DFI.
