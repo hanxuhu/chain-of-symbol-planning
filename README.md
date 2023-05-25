@@ -17,7 +17,7 @@ We propose the Natural Language Planning (NLP) benchmark for exploring the plann
 
 NLP is composed of three virtual spatial environments: Brick Words, NLVR-based (Suhr et al. [2017]) Manipulation, and Natural Language Navigation
 
-We have created the data of Brick World, NVLR-based Manipunation, and Natural Language Planning in you can view them through in *data*
+We have created the data of 2000 instances of Brick World 1D for 4 settings, 2000 instances of Brick World 2D for 4 settings, 1000 instances of NVLR-based Manipunation, and 500 instances of Natural Language Navigation, you can view them in *./data*
 
 You can also costomize your own Natural Language Planning data by modifying *create_bricks.py*, *create_navigate.py*, and *create_nlvr.py* .
 
