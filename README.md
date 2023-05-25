@@ -23,6 +23,8 @@ You can also costomize your own Natural Language Planning data by modifying *cre
 ## 🎵 Chain-of-Symbol Demonstration
 
 ![Demo](docs/demo_cos_1.jpg)
+Above is one example of 5-shot demostration for brick 1d.
+You can use them follow the quickstart. And you can create your own demos and upload them in *./demo* !
 
 ## 👀 Quickstart
 ```bash
