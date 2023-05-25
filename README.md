@@ -60,3 +60,17 @@ We have created the data of Brick World, NVLR-based Manipunation, and Natural La
 cd data
 ```
 You can also costomize your own Natural Language Planning data by modifying 'create_bricks.py', 'create_navigate.py', and 'create_nlvr.py' and run them.
+
+
+## Citation 
+Please cite our paper if you find the resource is useful:
+```
+@misc{hu2023chainofsymbol,
+      title={Chain-of-Symbol Prompting Elicits Planning in Large Langauge Models}, 
+      author={Hanxu Hu and Hongyuan Lu and Huajian Zhang and Wai Lam and Yue Zhang},
+      year={2023},
+      eprint={2305.10276},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
