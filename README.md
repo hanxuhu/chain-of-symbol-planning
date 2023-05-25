@@ -12,6 +12,16 @@ Hanxu Hu. Westlake Unversity; Hongyuan Lu. the Chinese University of Hong Kong
 
 ![Title](docs/cos1.jpg)
 
+## Benchmark Description
+We propose the Natural Language Planning (NLP) benchmark for exploring the planning abilities of current LLMs. 
+
+NLP is composed of three virtual spatial environments: Brick Words, NLVR-based (Suhr et al. [2017]) Manipulation, and Natural Language Navigation
+
+We have created the data of Brick World, NVLR-based Manipunation, and Natural Language Planning in you can view them through in *data*
+
+You can also costomize your own Natural Language Planning data by modifying *create_bricks.py*, *create_navigate.py*, and *create_nlvr.py* .
+
+
 ## Quickstart
 ```bash
 pip install -r requirements.txt
@@ -29,7 +39,7 @@ python test_brick.py\
 
 ```
 This is to use chatgpt with Chain-of-Symbol (CoS) prompting in Brick World 1d task, and in "shuffle both" setting.
-The outputs will be saved in "results/chatgpt_results/". 
+The outputs will be saved in *.results/chatgpt_results/*. 
 
 For arguments, "prompt_type" has two options: "cos" and "cot", which represents Chain-of-Symbol (CoS) prompting and Chain-of-Thought (CoS) prompting respectively, and "setting" has four options: "shuffle_both", "shuffle_label", "shuffle_descpt", and "noshuffle". And "model_name" now support 2 options: "chatgpt" and "text-davinci-003".
 
@@ -55,13 +65,6 @@ python eval_prompt.py;
 python eval_nlvr.py;
 python eval_navigation.py;
 ```
-## Data
-
-We have created the data of Brick World, NVLR-based Manipunation, and Natural Language Planning in you can view them through:
-```bash
-cd data
-```
-You can also costomize your own Natural Language Planning data by modifying 'create_bricks.py', 'create_navigate.py', and 'create_nlvr.py' and run them.
 
 
 ## Citation 
