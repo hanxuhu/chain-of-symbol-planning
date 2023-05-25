@@ -22,6 +22,8 @@ We have created the data of 2000 instances of Brick World 1D for 4 settings, 200
 You can also costomize your own Natural Language Planning data by modifying *create_bricks.py*, *create_navigate.py*, and *create_nlvr.py* .
 ## 🎵 Chain-of-Symbol Demonstration
 
+![Demo](docs/demo_cos_1.jpg)
+
 ## 👀 Quickstart
 ```bash
 pip install -r requirements.txt
